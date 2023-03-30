@@ -4,7 +4,8 @@ var app = express();
 
 app.get("/api/", (req, res, next) => {
    res.json({
-       time: (new Date()).toString()
+       time: (new Date()).toString(),
+      message: "Hello"
    });
 });
 
